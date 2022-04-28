@@ -28,7 +28,7 @@ const ContactForm = () => {
                <div className='container'>
                     <div className='subContainer'>
                          <div className='linkContainer'>
-                              <Link to='/contactData' className='link'>ADD CONTACT</Link>
+                              <Link to='/contactData' className='link'>Show Contacts</Link>
                          </div>
                          <div class='formContainer'>
                               <form onSubmit={handleSubmit}>
