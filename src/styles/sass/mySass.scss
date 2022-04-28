@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap');
+
+$bodyFontFamily:'Lato', sans-serif;
+
+$pageBgColor:rgb(191, 239, 240);
+$linkColor:rgb(46, 30, 120);
+
+
+$headTextSize:bold;
+$paragraphText:small;
+
+
+
+// form base page design
+
+.container{
+     background-color: $pageBgColor;
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     box-sizing: content-box;
+     width: 100%;
+}
+
+.subContainer{
+     text-align: center;
+     padding-top: 10vw;
+}
+
+.linkContainer{
+     padding: 20px;
+}
+.link{
+     color: $linkColor;
+     text-decoration: none;
+     font-family: $bodyFontFamily;
+     font-weight:bold;
+     font-size: x-large;
+     padding: 30px;
+
+
+}
+.formContainer{
+
+}
+
+form{
+     height: 50%;
+}
+
+input[type] {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     resize: vertical;
+     
+}
+button{
+     background-color: #f18c67;
+     border: none;
+     border-radius: 3px;
+     color: white;
+     padding: 5px 5px;
+     text-align: center;
+     display: inline-block;
+     font-size: large;
+     margin: 5px 5px;
+     cursor: pointer;
+}
+
+// -----------------------------------
+// contact data page
+.contactContainer{
+     box-sizing: border-box;
+     margin: 5px;
+
+}
+.allContactContainer{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-gap: 2vw;
+}
+
+.singleContact{
+     background-color: cornflowerblue;
+}
+
+// -------------------------------------------
+// single contact details page
+.contactDetails{
+     box-sizing: border-box;
+     
+
+}
+
+
+
+
+

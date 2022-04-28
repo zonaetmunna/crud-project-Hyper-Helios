@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap");
+.container {
+  background-color: #bfeff0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+}
+
+.subContainer {
+  text-align: center;
+  padding-top: 10vw;
+}
+
+.linkContainer {
+  padding: 20px;
+}
+
+.link {
+  color: #2e1e78;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 30px;
+}
+
+form {
+  height: 50%;
+}
+
+input[type] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  background-color: #f18c67;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: large;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+.contactContainer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 5px;
+}
+
+.allContactContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2vw;
+}
+
+.singleContact {
+  background-color: cornflowerblue;
+}
+
+.contactDetails {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=mySass.css.map */
