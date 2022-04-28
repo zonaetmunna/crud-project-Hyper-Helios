@@ -53,7 +53,7 @@ const ContactForm = () => {
                                         required
                                    />
                                    <br />
-                                   <button type='submit'>submit</button>
+                                   <button type='submit'>Add Contact</button>
                               </form>
                          </div>
                          {contacts.length} 
