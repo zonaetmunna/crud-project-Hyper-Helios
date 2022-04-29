@@ -16,10 +16,10 @@ function App() {
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
-          <Route path='/' element={<ContactForm></ContactForm>}></Route>
-          <Route path='/contactData' element={<ContactData></ContactData>}></Route>
-          <Route path='/singleContact/:contactId' element={<SingleContact></SingleContact>}></Route>
-          <Route path='/editContact/:contactId' element={<EditContact></EditContact>}></Route>
+          <Route path='/' element={<ContactForm />} />
+          <Route path='/contactData' element={<ContactData />} />
+          <Route path='/singleContact/:contactId' element={<SingleContact />} />
+          <Route path='/editContact/:contactId' element={<EditContact />} />
         </Routes>
       </BrowserRouter>
       
