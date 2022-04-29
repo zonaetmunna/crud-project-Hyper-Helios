@@ -5,16 +5,10 @@ const Navbar = () => {
      return (
           <div className='navContainer'>
                <div className='subNavContainer'>
-                    <div>
-                         <h3>Contact App</h3>
-                    </div>
+                    <h3>Contact App</h3>
+                    <Link to='/contactData' className='link'>Show Added Contacts</Link>
+                    <Link to='/' className='link'>Form</Link>
                     
-                    <div>
-                         <Link to='/contactData' className='link'>Show Added Contacts</Link>
-                    </div>
-                    <div>
-                         <Link to='/' className='link'>Form</Link>
-                    </div>
                </div>
                
           </div>

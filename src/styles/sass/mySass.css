@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap");
 /* color variable declaration */
-/* sizing */
+/* sizing variable */
 /* font family variable declaration */
 /* margin variable declaration */
 * {
@@ -16,15 +16,15 @@
   text-decoration: none;
   font-family: "Lato", sans-serif;
   font-size: 2vw;
-  padding: 10vw;
+  padding: 2vw 3vw;
 }
 
 .button {
   background-color: black;
   color: white;
   font-size: 2vw;
-  padding: 2% 2%;
-  margin: 2% 2%;
+  padding: 3% 2%;
+  margin: 3% 2%;
   border: 1px solid blue;
   border-radius: 4px;
   text-align: center;
@@ -48,7 +48,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 2vw 3vw;
 }
 
 .navContainer .subNavContainer h3 {
@@ -56,6 +56,8 @@
 }
 
 .container {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,11 +67,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
   width: 100%;
   height: 100%;
-  margin-top: 3vw;
+  margin: 3%;
 }
 
 .formContainer {
@@ -83,13 +83,14 @@ form {
   height: 75%;
   -webkit-box-shadow: 10px 10px 5px #aaaaaa;
           box-shadow: 10px 10px 5px #aaaaaa;
+  padding: 3%;
 }
 
 form input[type] {
   width: 75%;
   padding: 3%;
   margin: 3%;
-  border: 1px solid #ccc;
+  border: 1px solid #cbc5c5;
   border-radius: 4px;
   resize: vertical;
 }
@@ -122,6 +123,8 @@ form input[type] {
   font-size: 2vw;
   font-weight: bold;
   color: #f1ebeb;
+  padding: 2vw;
+  margin: 2vw;
 }
 
 .contactDetails {
@@ -157,6 +160,15 @@ form input[type] {
 }
 
 @media (max-width: 480px) {
+  .subNavContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .allContactContainer {
     display: -ms-grid;
     display: grid;
