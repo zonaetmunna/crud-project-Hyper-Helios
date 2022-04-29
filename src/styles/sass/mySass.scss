@@ -163,6 +163,30 @@ form{
     
 }
 
+// --------------------------------------
+// media query responsive
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile:480px;
+
+@media (min-width: $breakpoint-tablet) {
+     .allContactContainer{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-gap: 2vw;
+          
+     }
+}
+@media (max-width: $breakpoint-mobile) {
+     .allContactContainer{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-gap: 2vw;
+          
+     }
+}
+
+
 
 
 

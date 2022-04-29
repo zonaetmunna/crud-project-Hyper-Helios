@@ -145,4 +145,24 @@ form input[type] {
   color: #161111;
   margin: 3vw;
 }
+
+@media (min-width: 768px) {
+  .allContactContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .allContactContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2vw;
+  }
+}
 /*# sourceMappingURL=mySass.css.map */
