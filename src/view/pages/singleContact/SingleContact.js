@@ -29,11 +29,18 @@ const SingleContact = () => {
         }
 
      return (
-          <div className='contactDetails'>
-               <div>
-                    <h3>name- {contact.name}</h3>
-                    <h5>number- {contact.number}</h5>
-                    <button onClick={goEdit}>Edit-contact</button>
+          <div>
+               <div className='contactDetails'>
+                    <div>
+                         <h2>Contact-Details</h2>
+                         <div className='singleContact'>
+                              <h3>Name- {contact.name}</h3>
+                              <h5>Number- {contact.number}</h5>
+                              <button onClick={goEdit} className='button'>Edit contact</button>
+                         </div>
+                    </div>
+                    
+                    
                </div>
 
           </div>

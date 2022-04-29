@@ -47,7 +47,7 @@ const EditContact = () => {
      return (
           <div className='container'>
              
-                    <div className='subContainer'>
+                    <div className='formContainer'>
                          <div>
                               <h4>Edit Contact</h4>
                          </div>
@@ -73,7 +73,7 @@ const EditContact = () => {
                                    required
                               />
                               <br />
-                              <button type='submit'>Submit</button>
+                              <button type='submit' className='button'>Submit</button>
                          </form>
                     </div>
               

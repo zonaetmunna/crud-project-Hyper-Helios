@@ -1,99 +1,166 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap');
 
-$bodyFontFamily:'Lato', sans-serif;
-
+/* color variable declaration */
 $pageBgColor:rgb(191, 239, 240);
-$linkColor:rgb(46, 30, 120);
+$navBarBg:rgb(0, 0, 0);
+$navBarText:white;
+$linkColor:rgb(220, 217, 231);
+$buttonBg: black;
+$buttonColor: white;
+
+/* sizing */
+$fontSizeHeading:3vw;
+$fontSizeLink: 2vw;
+$fontSizeButton: 2vw;
+
+$fontColorH: rgb(241, 235, 235);
+$fontSizeH:2vw;
+$fontWightH: bold;
 
 
-$headTextSize:bold;
-$paragraphText:small;
+
+/* font family variable declaration */
+$fontFamily:'Lato', sans-serif;
 
 
+/* margin variable declaration */
+// -----------------------------------------
+// body
+*{
+     margin: 0;
+     padding: 0;
+     font-family: $fontFamily;
+     box-sizing: border-box;
+}
 
+// ------------------------------------------
+// common
+// link
+.link{
+     color: $linkColor;
+     text-decoration: none;
+     font-family: $fontFamily;
+     font-size: $fontSizeLink;
+     padding: 10vw;
+}
+// button
+.button{
+     background-color: $buttonBg;
+     color: $buttonColor;
+     font-size: $fontSizeButton;
+     padding: 2% 2%;
+     margin: 2% 2%;
+     border: 1px solid blue;
+     border-radius: 4px;
+     text-align: center;
+     display: inline-block;
+     cursor: pointer;
+}
+
+// -------------------------------------------
+// navbar 
+.navContainer{
+     width: 100%;
+     background-color: $navBarBg;
+     color: $navBarText;
+
+     .subNavContainer{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+
+     h3{
+          // text-align: center;
+          font-size: $fontSizeHeading;
+          
+     }
+}
+}
+
+// ---------------------------------------------
 // form base page design
-
 .container{
-     background-color: $pageBgColor;
      
      display: flex;
      justify-content: center;
      align-items: center;
-
      box-sizing: content-box;
      width: 100%;
+     height: 100%;
+     margin-top: 3vw;
 }
 
-.subContainer{
-     text-align: center;
-     padding-top: 10vw;
-}
-
-.linkContainer{
-     padding: 20px;
-}
-.link{
-     color: $linkColor;
-     text-decoration: none;
-     font-family: $bodyFontFamily;
-     font-weight:bold;
-     font-size: x-large;
-     padding: 30px;
-
-
-}
 .formContainer{
-
+     background-color: $pageBgColor;
+     width: 50%;
+     text-align: center;
+     padding-top: 5vw;
 }
 
 form{
-     height: 50%;
+     height: 75%;
+     box-shadow: 
+     10px 10px 5px #aaaaaa;
+
+     input[type] {
+          width: 75%;
+          padding: 3%;
+          margin: 3%;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+          
+     }
 }
 
-input[type] {
-     width: 100%;
-     padding: 12px;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     resize: vertical;
-     
-}
-button{
-     background-color: #f18c67;
-     border: none;
-     border-radius: 3px;
-     color: white;
-     padding: 5px 5px;
-     text-align: center;
-     display: inline-block;
-     font-size: large;
-     margin: 5px 5px;
-     cursor: pointer;
-}
+
 
 // -----------------------------------
 // contact data page
 .contactContainer{
      box-sizing: border-box;
-     margin: 5px;
-
+     margin: 5vw;
 }
 .allContactContainer{
      display: grid;
      grid-template-columns: repeat(4,1fr);
      grid-gap: 2vw;
+     
 }
 
 .singleContact{
      background-color: cornflowerblue;
+     text-align: center;
+     padding: 2vw;
+     margin: 1vw;
+     border-radius: 5px;
+     box-shadow: 10px 10px 5px #aaaaaa;
+     h3 h5{
+          font-size: $fontSizeH;
+          font-weight:$fontWightH ;
+          color: $fontColorH;
+     }
+     
 }
 
 // -------------------------------------------
 // single contact details page
 .contactDetails{
      box-sizing: border-box;
-     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
 
+     h2{
+          font-size: 4vw;
+          font-weight: bolder;
+          color: rgb(22, 17, 17);
+          margin: 3vw;
+     }
+    
 }
 
 

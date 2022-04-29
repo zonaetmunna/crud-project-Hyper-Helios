@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
 import Contact from './Contact';
+import '../../../styles/sass/mySass.scss'
 
 const ContactData = () => {
      //  selector
@@ -10,8 +11,7 @@ const ContactData = () => {
      return (
           <div className='contactContainer'>
                <div>
-                    <Link to='/' className='link'>Go Form</Link>
-                    <h4>total-contacts: {contacts.length}</h4>
+                    {/* <h4>total-contacts: {contacts.length}</h4> */}
                     <div className='allContactContainer'>
                          {contacts.map(contact=><Contact
                               key={contact.id} 

@@ -1,6 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap");
+/* color variable declaration */
+/* sizing */
+/* font family variable declaration */
+/* margin variable declaration */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.link {
+  color: #dcd9e7;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 2vw;
+  padding: 10vw;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  font-size: 2vw;
+  padding: 2% 2%;
+  margin: 2% 2%;
+  border: 1px solid blue;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navContainer {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.navContainer .subNavContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.navContainer .subNavContainer h3 {
+  font-size: 3vw;
+}
+
 .container {
-  background-color: #bfeff0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,55 +68,36 @@
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   width: 100%;
+  height: 100%;
+  margin-top: 3vw;
 }
 
-.subContainer {
+.formContainer {
+  background-color: #bfeff0;
+  width: 50%;
   text-align: center;
-  padding-top: 10vw;
-}
-
-.linkContainer {
-  padding: 20px;
-}
-
-.link {
-  color: #2e1e78;
-  text-decoration: none;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  font-size: x-large;
-  padding: 30px;
+  padding-top: 5vw;
 }
 
 form {
-  height: 50%;
+  height: 75%;
+  -webkit-box-shadow: 10px 10px 5px #aaaaaa;
+          box-shadow: 10px 10px 5px #aaaaaa;
 }
 
-input[type] {
-  width: 100%;
-  padding: 12px;
+form input[type] {
+  width: 75%;
+  padding: 3%;
+  margin: 3%;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
 
-button {
-  background-color: #f18c67;
-  border: none;
-  border-radius: 3px;
-  color: white;
-  padding: 5px 5px;
-  text-align: center;
-  display: inline-block;
-  font-size: large;
-  margin: 5px 5px;
-  cursor: pointer;
-}
-
 .contactContainer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 5px;
+  margin: 5vw;
 }
 
 .allContactContainer {
@@ -74,10 +110,39 @@ button {
 
 .singleContact {
   background-color: cornflowerblue;
+  text-align: center;
+  padding: 2vw;
+  margin: 1vw;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 5px #aaaaaa;
+          box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.singleContact h3 h5 {
+  font-size: 2vw;
+  font-weight: bold;
+  color: #f1ebeb;
 }
 
 .contactDetails {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contactDetails h2 {
+  font-size: 4vw;
+  font-weight: bolder;
+  color: #161111;
+  margin: 3vw;
 }
 /*# sourceMappingURL=mySass.css.map */

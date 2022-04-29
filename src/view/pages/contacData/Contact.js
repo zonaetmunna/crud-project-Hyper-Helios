@@ -27,9 +27,9 @@ const Contact = ({contact}) => {
      return (
           <div className='singleContact'>
                <h3>Name- {name}</h3>
-               <h5>number- {number}</h5>
-               <button onClick={handleDetails}>Details</button>
-               <button onClick={handleDelete}>Delete</button>
+               <h5>Number- {number}</h5>
+               <button onClick={handleDetails} className='button'>Details</button>
+               <button onClick={handleDelete} className='button'>Delete</button>
           </div>
      );
 };
