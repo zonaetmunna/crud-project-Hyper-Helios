@@ -140,10 +140,11 @@ form input[type] {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  text-align: center;
 }
 
 .contactDetails h2 {
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: bolder;
   color: #161111;
   margin: 3vw;

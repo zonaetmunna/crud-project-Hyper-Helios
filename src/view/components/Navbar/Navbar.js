@@ -6,8 +6,9 @@ const Navbar = () => {
           <div className='navContainer'>
                <div className='subNavContainer'>
                     <h3>Contact App</h3>
-                    <Link to='/contactData' className='link'>Show Added Contacts</Link>
-                    <Link to='/' className='link'>Form</Link>
+                    <Link to='/' className='link'>Form-Contact</Link>
+                    <Link to='/contactData' className='link'>Added-Contacts</Link>
+                    
                     
                </div>
                
