@@ -11,15 +11,6 @@ const ContactForm = () => {
 
      // error
      const [error,setError]=useState(false);
-
-     /* const validation=(e)=>{
-          const validate = /^(?:\+88|88)?(01[3-9]\d{8})$/;
-          if(validate.test(e.target.value) === true){
-               setNumber(e.target.value);
-          } */
-          
-          
-          
           /* if (validate.test(number) === true) {
                
                setError(false)
@@ -70,7 +61,7 @@ const ContactForm = () => {
                                    /* pattern = "^(?:\\+88|88)?(01[3-9]\\d{8})$" */
                                    required
                               />
-                              {error&&<h4>this is error</h4>}
+                              {/* {error&&<h4>this is error</h4>} */}
                               <br />
                               <button type='submit' className='button'>Add Contact</button>
                          </form>

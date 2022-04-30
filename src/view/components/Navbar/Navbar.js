@@ -8,8 +8,6 @@ const Navbar = () => {
                     <h3>Contact App</h3>
                     <Link to='/' className='link'>Form-Contact</Link>
                     <Link to='/contactData' className='link'>Added-Contacts</Link>
-                    
-                    
                </div>
                
           </div>

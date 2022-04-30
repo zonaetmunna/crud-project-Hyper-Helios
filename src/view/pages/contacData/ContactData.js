@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom';
 import Contact from './Contact';
 import '../../../styles/sass/mySass.scss'
 
@@ -20,8 +19,6 @@ const ContactData = () => {
                          }
                     </div>
                </div>
-               
-               
           </div>
      );
 };

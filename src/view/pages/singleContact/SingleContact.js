@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import {useSelector} from 'react-redux';
 import '../../../styles/sass//mySass.scss'
 
@@ -39,11 +39,7 @@ const SingleContact = () => {
                               <button onClick={goEdit} className='button'>Edit contact</button>
                          </div>
                     </div>
-                      
-                    
-                    
                </div>
-
           </div>
      );
 };
