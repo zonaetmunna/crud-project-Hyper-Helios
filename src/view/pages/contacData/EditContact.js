@@ -24,7 +24,6 @@ const EditContact = () => {
           if(name&&number){
                dispatch(
                     updateContact({
-                         
                          id:contactId,
                          name:name,
                          number:number
