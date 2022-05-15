@@ -47,7 +47,7 @@ const ContactForm = () => {
 
           setName('');
           setNumber('');
-          setFormErrors('')
+          // setFormErrors('')
           
           
      };
