@@ -7,10 +7,12 @@ import '../../../styles/sass/mySass.scss';
 
 const ContactForm = () => {
      // state
-     const [name,setName]=useState('');
-     const [number,setNumber]=useState('');
-     const [formErrors, setFormErrors] = useState('');
-     // const [isSubmit, setIsSubmit] = useState(false);
+     const [name,setName]=useState({});
+     const [number,setNumber]=useState({});
+     const [formErrors, setFormErrors] = useState({});
+
+     // const [data,setData]=useState({name:'',number:'',error:''})
+
      // redux dispatch
      const dispatch = useDispatch();
      const contacts=useSelector(state=>state.contacts);
