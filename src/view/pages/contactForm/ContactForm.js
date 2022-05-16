@@ -7,11 +7,9 @@ import '../../../styles/sass/mySass.scss';
 
 const ContactForm = () => {
      // state
-     const [name,setName]=useState({});
-     const [number,setNumber]=useState({});
-     const [formErrors, setFormErrors] = useState({});
-
-     // const [data,setData]=useState({name:'',number:'',error:''})
+     const [name,setName]=useState('');
+     const [number,setNumber]=useState('');
+     const [error, setError] = useState('');
 
      // redux dispatch
      const dispatch = useDispatch();
@@ -40,7 +38,7 @@ const ContactForm = () => {
                };
           }
           else if(!regex.test(number) && number !== ""){
-               setFormErrors('number is not valid')
+               setError('number is not valid')
 
           }else{
                
@@ -78,7 +76,7 @@ const ContactForm = () => {
                               /* pattern = "^(?:\\+88|88)?(01[3-9]\\d{8})$" */
                               required
                          />
-                         {formErrors&&<h4>this is not valid number</h4>}
+                         {error&&<h4>this is not valid number</h4>}
                          <br />
                          <button type='submit' className='button'>Add Contact</button>
                     </form>
