@@ -11,8 +11,18 @@ const EditContact = () => {
      //for matching id 
      const contact=useSelector(state=>state.contacts.find(s => s.id ===contactId));
 
-     const [name,setName]=useState(contact.name);
-     const [number,setNumber]=useState(contact.number);
+     // state form data
+     const [formData,setFormData]=useState({name:contact.name,number:contact.number});
+     const [error,setError]=useState('');
+     
+     // handle change
+     const handleChange=(e)=>{
+          const field=e.target.name;
+          const value=e.target.value;
+          const newValue={...formData};
+          newValue[field]=value;
+          setFormData(newValue);
+     }
 
 
      const dispatch=useDispatch();
@@ -21,16 +31,19 @@ const EditContact = () => {
      // handle contact update
      const handleUpdate=(e)=>{
           e.preventDefault();
-          if(name&&number){
+          if(formData.name&&formData.number){
                dispatch(
                     updateContact({
                          id:contactId,
-                         name:name,
-                         number:number
+                         name:formData.name,
+                         number:formData.number
                     })
                );
           }
+          
+
           navigate('/contactData');
+          
      };
 
      return (
@@ -47,7 +60,7 @@ const EditContact = () => {
                               defaultValue={contact.name}  
                               id=""
                               placeholder='your name'
-                              onChange={(e)=>setName(e.target.value)}
+                              onChange={handleChange}
                               required    
                          />
                          <br />
@@ -57,11 +70,12 @@ const EditContact = () => {
                               defaultValue={contact.number} 
                               id="" 
                               placeholder='your number'
-                              onChange={(e)=>setNumber(e.target.value)}
+                              onChange={handleChange}
                               // pattern = "^(?:\\+88|88)?(01[3-9]\\d{8})$"
                               required
                          />
                          <br />
+                         {error&&<h3>this is error</h3>}
                          <button type='submit' className='button'>Submit</button>
                     </form>
                </div>

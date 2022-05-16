@@ -7,23 +7,24 @@ import '../../../styles/sass/mySass.scss';
 
 const ContactForm = () => {
      // state
-     const [name,setName]=useState('');
-     const [number,setNumber]=useState('');
+     // const [name,setName]=useState('');
+     // const [number,setNumber]=useState('');
+     const [formData,setFormData]=useState({});
      const [error, setError] = useState('');
 
      // redux dispatch
      const dispatch = useDispatch();
      const contacts=useSelector(state=>state.contacts);
 
-     
+     // handle change
+     const handleChange=(e)=>{
+          const field=e.target.name;
+          const value=e.target.value;
+          const newValue={...formData};
+          newValue[field]=value;
+          console.log(newValue);
+          setFormData(newValue);
 
-     const handleNameChange=(e)=>{
-          setName(e.target.value);
-          console.log(e.target.value)
-     };
-     const handleNumberChange=(e)=>{
-          setNumber(e.target.value);
-          
      }
 
      // handle submit
@@ -31,13 +32,16 @@ const ContactForm = () => {
           e.preventDefault();
 
           const regex=/^([01]|\+88)?\d{11}/;          
-          if(regex.test(number)){
-               if(name&&number){
-                    dispatch(addContact({id: nanoid(),name,number})
+          if(regex.test(formData.number)){
+               if(formData.name&&formData.number){
+                    dispatch(addContact({
+                         id: nanoid(),
+                         name:formData.name,
+                         number:formData.number})
                     );
                };
           }
-          else if(!regex.test(number) && number !== ""){
+          else if(!regex.test(formData.number) && formData.number !== ""){
                setError('number is not valid')
 
           }else{
@@ -45,9 +49,10 @@ const ContactForm = () => {
 
           }
 
-          setName('');
-          setNumber('');
+          // setName('');
+          // setNumber('');
           // setFormErrors('')
+          setFormData('');
           
           
      };
@@ -59,20 +64,20 @@ const ContactForm = () => {
                          <input 
                               type="text" 
                               name="name"
-                              value={name}  
+                              value={formData.name}  
                               id=""
                               placeholder='your name'
-                              onChange={handleNameChange}
+                              onChange={handleChange}
                               required    
                          />
                          <br />
                          <input 
                               type="number" 
                               name="number"
-                              value={number} 
+                              value={formData.number} 
                               id="" 
                               placeholder='your number'
-                              onChange={handleNumberChange}
+                              onChange={handleChange}
                               /* pattern = "^(?:\\+88|88)?(01[3-9]\\d{8})$" */
                               required
                          />
